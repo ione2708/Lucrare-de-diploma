@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.6">
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        </style>
+
+</head> 
+
+<body>
+  <p style="text-align: right;">Data generarii raportului: {{data_raport}}</p> 
+    <center><h3 style="text-align: center;">Raport pentru luna {{luna_titlu}}</h3> </center>
+      <br><br>          
+    
+   
+    
+    <p style="text-indent: 30px;">Acest raport corespunde departamentului <b>{{ departament }}</b> pentru luna {{ luna }} a anului 2023.</p>
+    <p style="text-indent: 50px;">Taskuri asignate departamentului: {{taskuri}}.</p>
+    <p style="text-indent: 50px;">Total angajati: {{angajati}}.</p>
+    <p style="text-indent: 50px;">Taskuri rezolvate la timp: {{taskuri_la_timp}}.</p>
+    <p style="text-indent: 50px;">Taskuri rezolvate cu intarziere: {{taskuri_intarziere}}.</p><br>
+
+    <p style="text-indent: 30px;">Lista angajatilor din departamentul <b>{{ departament }}</b> si situatia notelor pentru luna {{ luna }} a anului 2023.</p>
+    {{tabel}}
+      
+</body>
+</html>
